@@ -1,116 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exam & Evaluation Schedule</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #7f8c8d;
+        margin-bottom: 20px;
+    }
+
+    .table-container {
+        width: 95%;
+        margin: auto;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        animation: fadeIn 0.6s ease-in-out;
+    }
+
+    th, td {
+        padding: 14px;
+        text-align: center;
+    }
+
+    th {
+        background: linear-gradient(45deg, #3498db, #2980b9);
+        color: white;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    td {
+        border-bottom: 1px solid #eee;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8fbff;
+    }
+
+    tr:hover {
+        background-color: #d6eaf8;
+        transform: scale(1.01);
+        transition: 0.2s;
+    }
+
+    .highlight {
+        font-weight: bold;
+        color: #e74c3c;
+    }
+
+    .endsem {
+        background-color: #fff3cd !important;
+        border-left: 6px solid #f39c12;
+        font-weight: bold;
+    }
+
+    .endsem td {
+        color: #b9770e;
+    }
+
+    .badge {
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .badge-lab { background: #e8f8f5; color: #16a085; }
+    .badge-exam { background: #fdecea; color: #e74c3c; }
+    .badge-project { background: #eef3fd; color: #5b6ef5; }
+    .badge-quiz { background: #fff6e5; color: #f39c12; }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+</head>
+<body>
+
+<h1>📅 Exam & Evaluation Schedule</h1>
+<p class="subtitle">Stay sharp. Stay ahead.</p>
+
+<div class="table-container">
 <table>
-    <tr>
-        <th>Day</th>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Subject</th>
-        <th>Event</th>
-        <th>Marks</th>
-    </tr>
 
-    <!-- APRIL EVENTS -->
+<thead>
+<tr>
+    <th>Day</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Subject</th>
+    <th>Event</th>
+    <th>Marks</th>
+</tr>
+</thead>
 
-    <tr>
-        <td>TBA</td>
-        <td>4th Week of April</td>
-        <td>TBA</td>
-        <td>DCCN</td>
-        <td>Lab Exam</td>
-        <td>20</td>
-    </tr>
+<tbody>
 
-    <tr>
-        <td class="highlight">Mon</td>
-        <td class="highlight">27 April</td>
-        <td class="highlight">Last Date</td>
-        <td>OS</td>
-        <td>File Submission</td>
-        <td>10</td>
-    </tr>
+<tr>
+    <td>TBA</td>
+    <td>4th Week of April</td>
+    <td>TBA</td>
+    <td>DCCN</td>
+    <td><span class="badge badge-lab">Lab Exam</span></td>
+    <td>20</td>
+</tr>
 
-    <tr>
-        <td>Mon - Fri</td>
-        <td>27 Apr - 1st May</td>
-        <td>TBA</td>
-        <td>MAD</td>
-        <td>Project Evaluation</td>
-        <td>40</td>
-    </tr>
+<tr>
+    <td class="highlight">Mon</td>
+    <td class="highlight">27 April</td>
+    <td class="highlight">Last Date</td>
+    <td>OS</td>
+    <td><span class="badge badge-project">File Submission</span></td>
+    <td>10</td>
+</tr>
 
-    <tr>
-        <td>Tue</td>
-        <td>28 April</td>
-        <td>TBA</td>
-        <td>DAA</td>
-        <td>Lab Exam</td>
-        <td>10</td>
-    </tr>
+<tr>
+    <td>Mon - Fri</td>
+    <td>27 Apr - 1 May</td>
+    <td>TBA</td>
+    <td>MAD</td>
+    <td><span class="badge badge-project">Project Evaluation</span></td>
+    <td>40</td>
+</tr>
 
-    <tr>
-        <td>Wed</td>
-        <td>29 April</td>
-        <td>TBA</td>
-        <td>OS</td>
-        <td>Lab Implementation</td>
-        <td>10</td>
-    </tr>
+<tr>
+    <td>Tue</td>
+    <td>28 April</td>
+    <td>TBA</td>
+    <td>DAA</td>
+    <td><span class="badge badge-lab">Lab Exam</span></td>
+    <td>10</td>
+</tr>
 
-    <tr>
-        <td>Wed</td>
-        <td>Starting from 29 Apr</td>
-        <td>Lab Hours</td>
-        <td>DBMS</td>
-        <td>Project Evaluation</td>
-        <td>40</td>
-    </tr>
+<tr>
+    <td>Wed</td>
+    <td>29 April</td>
+    <td>TBA</td>
+    <td>OS</td>
+    <td><span class="badge badge-lab">Lab Implementation</span></td>
+    <td>10</td>
+</tr>
 
-    <tr>
-        <td>Thu</td>
-        <td>30 April</td>
-        <td>4:30 - 5:30</td>
-        <td>DBMS</td>
-        <td>Quiz 2</td>
-        <td>20</td>
-    </tr>
+<tr>
+    <td>Wed</td>
+    <td>Starting 29 Apr</td>
+    <td>Lab Hours</td>
+    <td>DBMS</td>
+    <td><span class="badge badge-project">Project Evaluation</span></td>
+    <td>40</td>
+</tr>
 
-    <!-- MAY EVENTS -->
+<tr>
+    <td>Thu</td>
+    <td>30 April</td>
+    <td>4:30 - 5:30</td>
+    <td>DBMS</td>
+    <td><span class="badge badge-quiz">Quiz 2</span></td>
+    <td>20</td>
+</tr>
 
-    <tr>
-        <td>Wed</td>
-        <td>6 May</td>
-        <td>2:00 - 4:00</td>
-        <td>CTCS</td>
-        <td>End Lab Exam</td>
-        <td>40</td>
-    </tr>
+<tr>
+    <td>Wed</td>
+    <td>6 May</td>
+    <td>2:00 - 4:00</td>
+    <td>CTCS</td>
+    <td><span class="badge badge-lab">End Lab Exam</span></td>
+    <td>40</td>
+</tr>
 
-    <!-- END SEM EXAMS -->
+<tr class="endsem">
+    <td>Mon</td>
+    <td>11 May</td>
+    <td>Afternoon</td>
+    <td>DAA</td>
+    <td><span class="badge badge-exam">End Sem Exam</span></td>
+    <td>40</td>
+</tr>
 
-    <tr class="endsem">
-        <td>Mon</td>
-        <td>11 May</td>
-        <td>Afternoon Shift</td>
-        <td>DAA</td>
-        <td>End Sem Exam</td>
-        <td>40</td>
-    </tr>
+<tr class="endsem">
+    <td>Wed</td>
+    <td>13 May</td>
+    <td>Afternoon</td>
+    <td>DCCN</td>
+    <td><span class="badge badge-exam">End Sem Exam</span></td>
+    <td>40</td>
+</tr>
 
-    <tr class="endsem">
-        <td>Wed</td>
-        <td>13 May</td>
-        <td>Afternoon Shift</td>
-        <td>DCCN</td>
-        <td>End Sem Exam</td>
-        <td>40</td>
-    </tr>
+<tr class="endsem">
+    <td>Fri</td>
+    <td>15 May</td>
+    <td>Afternoon</td>
+    <td>OS</td>
+    <td><span class="badge badge-exam">End Sem Exam</span></td>
+    <td>40</td>
+</tr>
 
-    <tr class="endsem">
-        <td>Fri</td>
-        <td>15 May</td>
-        <td>Afternoon Shift</td>
-        <td>OS</td>
-        <td>End Sem Exam</td>
-        <td>40</td>
-    </tr>
-
+</tbody>
 </table>
+</div>
+
+</body>
+</html>
